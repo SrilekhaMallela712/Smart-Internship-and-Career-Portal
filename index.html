@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Internship Portal</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <i class="fa-solid fa-code"></i>
+        Vault of Codes
+    </div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#internships">Internships</a></li>
+        <li><a href="#advisor">AI Advisor</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button id="theme-btn">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero">
+
+    <video autoplay muted loop playsinline preload="auto" class="hero-video">
+        <source src="assets/hero-video.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <h1>Launch Your Career</h1>
+        <p id="typed"></p>
+
+        <a href="#internships" class="btn">
+            Explore Internships
+        </a>
+    </div>
+
+</section>
+
+<!-- Stats -->
+
+<section id="stats">
+
+<h2>Our Impact</h2>
+
+<div class="stats-container">
+
+<div class="stat">
+<h3 class="counter" data-target="1200">0</h3>
+<p>Students</p>
+</div>
+
+<div class="stat">
+<h3 class="counter" data-target="150">0</h3>
+<p>Companies</p>
+</div>
+
+<div class="stat">
+<h3 class="counter" data-target="95">0</h3>
+<p>Success Rate %</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Internships -->
+
+<section id="internships">
+
+<h2>Internship Explorer</h2>
+
+<div class="filters">
+
+<button class="filter active" data-category="all">All</button>
+
+<button class="filter" data-category="web">Web</button>
+
+<button class="filter" data-category="java">Java</button>
+
+<button class="filter" data-category="python">Python</button>
+
+<button class="filter" data-category="ai">AI</button>
+
+</div>
+
+<input
+type="text"
+id="search"
+placeholder="Search Internship">
+
+<div id="cards" class="cards"></div>
+
+</section>
+
+<!-- AI Advisor -->
+
+<section id="advisor">
+
+<h2>AI Career Advisor</h2>
+
+<div class="advisor-box">
+
+<select id="interest">
+
+<option>Java</option>
+<option>Python</option>
+<option>Web Development</option>
+<option>Artificial Intelligence</option>
+
+</select>
+
+<button onclick="recommendCareer()">
+Recommend
+</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+</section>
+
+<!-- Skills -->
+
+<section class="skills">
+
+<h2>Skills Dashboard</h2>
+
+<div class="skill">
+
+<p>HTML</p>
+
+<div class="progress">
+<div class="bar html"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>CSS</p>
+
+<div class="progress">
+<div class="bar css"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>Java</p>
+
+<div class="progress">
+<div class="bar java"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>Python</p>
+
+<div class="progress">
+<div class="bar python"></div>
+</div>
+
+</div>
+
+</section>
+
+<!-- Testimonials -->
+
+<section id="testimonials">
+
+<h2>Success Stories</h2>
+
+<div class="testimonial-box">
+
+<p id="review"></p>
+
+<h4 id="author"></h4>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<form>
+
+<input type="text" placeholder="Name">
+
+<input type="email" placeholder="Email">
+
+<textarea placeholder="Message"></textarea>
+
+<button type="submit">
+Send
+</button>
+
+</form>
+
+</section>
+
+<!-- Modal -->
+
+<div id="modal" class="modal">
+
+<div class="modal-content">
+
+<span id="close">&times;</span>
+
+<h2 id="modal-title"></h2>
+
+<p id="modal-desc"></p>
+
+<button id="applyBtn">
+    Apply Now
+</button>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
